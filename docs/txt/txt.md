@@ -147,7 +147,7 @@
 
 ## 然后你可以使用命令来建立多个分支：
 
-> 'git branch branchname'    #建立一个新的分支
+> git branch branchname    #建立一个新的分支
 
 
 
@@ -157,7 +157,7 @@
 
 ## 跳转不同分支的命令：
 
-> 'git checkout branchname'         #跳转到指定分支
+> git checkout branchname         #跳转到指定分支
 > 我们为什么要建立那么多的分支呢？
 
 --
