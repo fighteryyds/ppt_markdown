@@ -58,7 +58,7 @@
 
     <div class="reveal">
         <div class="slides">
-            <section><section><div class="center middle"><div style="width:100%"><div><p class="font-serif my-1"><img alt="" src="./static/img/8927ae762f524f699328d91c4db16800.png"/></p>
+            <section><section><div class="center middle"><div style="width:100%"><div><p class="font-serif my-1"><img alt="" src="./static/img/212e6976ce504ab78814ff99aedb90f8.png"/></p>
 <h1 id="git" class="text-2xl mt-2 font-sans">git快速入门</h1>
 <blockquote>
 <p class="font-serif my-1">报告者：张佳昕</p>
@@ -87,7 +87,7 @@ git init</p>
 第一次使用这个命令，内容应该为空。接下来我会叫大家如何存档</p>
 </blockquote>
 <div style="text-align: center;">
-    <img src="./static/img/3d94e22901354193aa859fb382fdfbbc.jpg" width="50%" height="40%" style="display: inline-block; margin-left: auto; margin-right: auto;"/>
+    <img src="./static/img/d6a6353f91f44a5bb15c44e95e6d98ee.jpg" width="50%" height="40%" style="display: inline-block; margin-left: auto; margin-right: auto;"/>
 </div></div></section></section><section><section><div><h2 id="5" class="text-xl mt-2 pb-2 font-sans">5.查看所有已跟踪文件的命令（已跟踪的文件是存档文件的前身）：</h2>
 <blockquote>
 <p class="font-serif my-1">git status
@@ -107,8 +107,8 @@ touch .gitignore   #隐藏文件 .gitignore（linux下以.开头的文件都是�
 <blockquote>
 <p class="font-serif my-1">将你不想跟踪和存档的文件写入此文件当中,就像我写的1124.c</p>
 </blockquote>
-<p class="font-serif my-1"><img src="./static/img/505f2cd920b44313bb7bb75c209c05ae.jpg" width="40%" height="40%" style="display: block; margin-left: auto;margin-right: auto;"/></p></div></section></section><section><section><div><h2 id="_1" class="text-xl mt-2 pb-2 font-sans">接下来演示一下忽略的效果：</h2>
-<p class="font-serif my-1"><img src="./static/img/1400ff225f9c4b5191d9ba1887472468.jpg" width="50%" height="50%" style="display: block; margin-left: auto;margin-right: auto;"/></p></div></section></section><section><section><div><blockquote>
+<p class="font-serif my-1"><img src="./static/img/3c0199c783894e8fb7ae0b289cc5d268.jpg" width="40%" height="40%" style="display: block; margin-left: auto;margin-right: auto;"/></p></div></section></section><section><section><div><h2 id="_1" class="text-xl mt-2 pb-2 font-sans">接下来演示一下忽略的效果：</h2>
+<p class="font-serif my-1"><img src="./static/img/937a0401188c4d6e9244188673431573.jpg" width="50%" height="50%" style="display: block; margin-left: auto;margin-right: auto;"/></p></div></section></section><section><section><div><blockquote>
 <p class="font-serif my-1">在我用vim编辑了gitignore文件后，可以看出1124.c文件没有了，它被隐藏在了.gitignore当中</p>
 </blockquote><div class="fragment" data-fragment-index="1"><blockquote>
 <p class="font-serif my-1">其实也可以忽略一类文件</p>
@@ -117,15 +117,15 @@ touch .gitignore   #隐藏文件 .gitignore（linux下以.开头的文件都是�
 <p class="font-serif my-1">*.apk</p>
 <p class="font-serif my-1">*.c</p>
 <p class="font-serif my-1">*表示匹配0个或多个任意字符</p>
-</blockquote></div></div></section></section><section><section><div><h2 id="7" class="text-xl mt-2 pb-2 font-sans">7.学会了跟踪之后，再加一个命令就可以实现存档了：</h2>
-<blockquote>
-<p class="font-serif my-1">git commit  #将跟踪文件进行存档</p>
-</blockquote><div class="fragment" data-fragment-index="1"><h2 id="8" class="text-xl mt-2 pb-2 font-sans">8.读档:</h2>
-<blockquote>
-<p class="font-serif my-1">首先使用git log来查看已有的存档，并决定你需要回到哪个过去，每一份存档都有一个hash code ，例如b87c2324525wr21243242,你需要通过hash code来告诉git你希望都哪一个档，使用以下命令进行读档：
-git reset –hard b87c
-其中b87c上文hash code的前缀: 你不需要输入整个hash code. 这时你再看看你的代码, 你已经成功地回到了过去！</p>
 </blockquote></div></div></section></section><section><section><div><blockquote>
+<p class="font-serif my-1">7.学会了跟踪之后，再加一个命令就可以实现存档了：</p>
+<p class="font-serif my-1">git commit  #将跟踪文件进行存档</p>
+</blockquote></div></section></section><section><section><div><blockquote>
+<p class="font-serif my-1">8.读档:
+首先使用git log来查看已有的存档，并决定你需要回到哪个过去，每一份存档都有一个hash code ，例如b87c2324525wr21243242,你需要通过hash code来告诉git你希望都哪一个档，使用以下命令进行读档：</p>
+<p class="font-serif my-1">git reset –hard b87c</p>
+<p class="font-serif my-1">其中b87c上文hash code的前缀: 你不需要输入整个hash code. 这时你再看看你的代码, 你已经成功地回到了过去！</p>
+</blockquote></div></section></section><section><section><div><blockquote>
 <p class="font-serif my-1">你需要再三确认选择的存档是不是你的真正目标. 如果你读入了一个较早的存档, 那么比这个存档新的所有记录都将被删除! 这意为着你不能随便回到"将来"了.</p>
 </blockquote><div class="fragment" data-fragment-index="1"><blockquote>
 <p class="font-serif my-1">但是方法总比困难多，git分支可以避免这些问题的出现</p>
@@ -142,30 +142,30 @@ b.使用命令进入主分支：
 </blockquote></div></div></section></section><section><section><div><h2 id="_1" class="text-xl mt-2 pb-2 font-sans">然后你可以使用命令来建立多个分支：</h2>
 <blockquote>
 <p class="font-serif my-1">git branch branchname    #建立一个新的分支</p>
-</blockquote><div class="fragment" data-fragment-index="1"><h2 id="_1" class="text-xl mt-2 pb-2 font-sans">跳转不同分支的命令：</h2>
+</blockquote></div></section></section><section><section><div><h2 id="_1" class="text-xl mt-2 pb-2 font-sans">跳转不同分支的命令：</h2>
 <blockquote>
 <p class="font-serif my-1">git checkout branchname         #跳转到指定分支
 我们为什么要建立那么多的分支呢？</p>
-</blockquote></div><div class="fragment" data-fragment-index="2"><blockquote>
+</blockquote><div class="fragment" data-fragment-index="1"><blockquote>
 <p class="font-serif my-1">接下来我用一个实际的例子来解释为什么要使用分支</p>
-</blockquote></div></div></section></section><section><section><div><h2 id="1git-checkout-master" class="text-xl mt-2 pb-2 font-sans">1.首先我使用git checkout master进入了主分支</h2>
-<h2 id="2zjxzjx666" class="text-xl mt-2 pb-2 font-sans">2.然后我再虚构分支中，找一个文件进行内容修改，比如我再zjx空文件写入了zjx666并保存，这个保存与存档一样，需要输入存档命令的</h2>
-<blockquote>
+</blockquote></div></div></section></section><section><section><div><blockquote>
+<p class="font-serif my-1">1.首先我使用git checkout master进入了主分支
+2.然后我再虚构分支中，找一个文件进行内容修改，比如我再zjx空文件写入了zjx666并保存，这个保存与存档一样，需要输入存档命令的</p>
 <p class="font-serif my-1">1|git add zjx</p>
 <p class="font-serif my-1">2|git commit</p>
 </blockquote></div></section></section><section><section><div><h2 id="_1" class="text-xl mt-2 pb-2 font-sans">接下来就是见证奇迹的时刻了</h2>
-<p class="font-serif my-1"><img src="./static/img/4cf80d03cd7e452cbc1185b1096fb2e8.jpg" width="30%" height="30%" style="display: block; margin-left: auto;margin-right: auto;"/></p>
+<p class="font-serif my-1"><img src="./static/img/4c8b154a06d24bd18cebbc002fb13eed.jpg" width="30%" height="30%" style="display: block; margin-left: auto;margin-right: auto;"/></p>
 <blockquote>
 <p class="font-serif my-1">我在master主分支进行了编辑操作，当我使用命令进入1124c分支后，甚至连zjx这个文件都没有。
 这说明了一个道理，各个分支直接相互独立，互不干涉，这样你就可以随时进入各个时间节点，就像平行时空一样！</p>
-</blockquote></div></section></section><section><section><div><p class="font-serif my-1"><img alt="" src="./static/img/2fe3dc365e33465eac9e031154aadddd.png"/></p>
+</blockquote></div></section></section><section><section><div><p class="font-serif my-1"><img alt="" src="./static/img/bc0927c925604fd2847b52f2c75ca34a.png"/></p>
 <blockquote>
 <div class="codehilite"><pre class="bg-gray-100 overflow-x-auto rounded p-2 mb-2 mt-2"><span/><code>                       讨论
 
                       5-10min
 </code></pre></div>
 
-</blockquote></div></section></section><section><section><div><p class="font-serif my-1"><img alt="" src="./static/img/83fef5ce56f14cf4a72a07bd02ba1631.png"/></p>
+</blockquote></div></section></section><section><section><div><p class="font-serif my-1"><img alt="" src="./static/img/1f3f671fc551454cb4ab2937be78214f.png"/></p>
 <blockquote>
 <div class="codehilite"><pre class="bg-gray-100 overflow-x-auto rounded p-2 mb-2 mt-2"><span/><code>                        谢谢
 
